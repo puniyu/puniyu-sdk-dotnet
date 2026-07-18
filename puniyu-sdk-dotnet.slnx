@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="puniyu-sdk-dotnet.csproj" />
+  <Project Path="Sender/Sender.csproj" Id="67e5c847-f3a7-4c3c-9a93-ef5f9157eb73" />
+</Solution>

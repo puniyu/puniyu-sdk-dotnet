@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <RootNamespace>Puniyu.Sdk</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Sender\**" />
+      <Compile Remove="target\**" />
+      <Compile Remove="puniyu_binding\**" />
+      <Compile Remove="dist\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Sender\**" />
+      <EmbeddedResource Remove="target\**" />
+      <EmbeddedResource Remove="puniyu_binding\**" />
+      <EmbeddedResource Remove="dist\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Sender\**" />
+      <None Remove="target\**" />
+      <None Remove="boltffi.toml" />
+      <None Remove="Cargo.lock" />
+      <None Remove="puniyu_binding\**" />
+      <None Remove="dist\**" />
+      <None Remove="puniyu-sdk-dotnet.csproj.Backup.tmp" />
+      <None Remove="NuGet.Config" />
+      <None Remove=".gitignore" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="puniyu_binding" Version="0.1.2" />
+    </ItemGroup>
+
+</Project>
